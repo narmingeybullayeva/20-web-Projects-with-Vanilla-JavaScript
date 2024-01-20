@@ -32,7 +32,8 @@ aside {
 
 button {
     background-color: #fff;
-    border-color: #009999;
+    border: 0;
+    border: 1px solid #009999;
     color: #009999;
     border-radius: 10px;
     margin: 10px;
