@@ -129,7 +129,7 @@ button:focus {
 
 .modal-container {
   background-color: rgba(0,0,0,0.6);
-  /* display: none; */
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -158,3 +158,54 @@ button:focus {
   
 }
 
+.modal-header h3 {
+  margin: 0;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-content p{
+  color: var(--color-primary-dark);
+}
+
+.modal-form div {
+  margin: 15px 0;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--color-secondary);
+}
+
+.modal-form .form-input {
+  padding: 8px;
+  width: 100%;
+  border: 0;
+  border: 1px solid var(--color-primary-dark);
+  color:var(--color-primary-dark);
+  border-radius: 5px;
+}
+
+input:focus { 
+  outline: none ;
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 10px rgba(120,0,120,0.6);
+}
+
+::placeholder {
+  color: var(--color-secondary);
+ 
+}
+
+.close-btn {
+  background:transparent;
+  font-size: 25px;
+  border: 0;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
