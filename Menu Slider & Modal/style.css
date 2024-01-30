@@ -14,6 +14,13 @@
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
+  transition: transform 0.3s;
+}
+
+body.show-nav {
+  /* width of navbar */
+  /* it is also work when we write translate because the first param in 'translate' is the x value */
+  transform: translate(300px);
 }
 
 nav{
@@ -138,6 +145,10 @@ button:focus {
 
 }
 
+.modal-container.show-modal {
+  display: block;
+}
+
 .modal {
   background-color: #fff;
   position: absolute;
@@ -149,6 +160,8 @@ button:focus {
   transform: translate(-50%, -50%);
   max-width: 100%;
   width: 400px; 
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
 }
 
 .modal-header {
@@ -208,4 +221,14 @@ input:focus {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
