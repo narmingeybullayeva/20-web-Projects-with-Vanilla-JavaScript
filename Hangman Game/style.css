@@ -1,6 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #34495e;
     color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 20px 0 0;
+}
+
+.game-container {
+    padding: 20px 30px;
+    position: relative;
+    margin: auto;
+    width: 450px;
+    height: 350px;
 }
 
 .figure-container {
@@ -12,4 +35,43 @@ body {
 
 .figure-part {
     display: none;
+}
+
+.wrong-letter-container {
+    position: absolute;
+    top:20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.wrong-letter-container p{
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.wrong-letter-container span{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.word {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: 20px;
+    /* if we give vale to the x we can write only translate because the first value is for x */
+    transform: translate(-50%);   
+}
+
+.letter {
+    border-bottom: 3px solid #2980b9;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 3px;
+    width: 20px;
+    height: 50px;
 }
