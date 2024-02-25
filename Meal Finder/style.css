@@ -91,8 +91,82 @@ input[type='text'] {
     opacity: 1;
 }
 
+.single-meal {
+    margin: 30px auto;
+    width: 70%;
+}
+
+.single-meal h2 {
+
+}
+
+.single-meal img {
+    width: 300px;
+    margin: 15px;
+    border: 4px #fff solid;
+    border-radius: 2px;
+}
+
+.single-meal-info {
+    margin: 20px;
+    padding: 10px;
+    border: 2px #e09850 dashed;
+    border-radius: 5px;
+}
+
+.single-meal-info p {
+
+}
+
+.main p {
+    margin: 0;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.main ul {
+    list-style: none;
+    border: 2px solid #e09850;
+    border-radius: 5px;
+    background-color: #47311b;
+    color: #fff;   
+}
+
+.main ul li {
+    line-height: 1.5;
+    font-size: 17px;
+    font-weight: 700;
+}
+@media (max-width:800px){
+    .meals {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width:700px){
+    .meals {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .meal {
+        height: 200px;
+        width: 200px;
+    }
+}
+
 @media (max-width: 500px) {
     input[type='text']{
         width: 100%;
     }
+
+    .meals {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .meal {
+        height: 300px;
+        width: 300px;
+    }
+
 }
