@@ -90,10 +90,11 @@ input[type='number'] {
 }
 
 .btn {
-    background-color: #fff;
-    border: 1px solid #dedede;
+    cursor: pointer;
+    background-color:  #009999;
+    border: 1px solid #009999;
     box-shadow: var(--box-shadow);
-    color: #6d6d6d;
+    color: #fff;
     padding: 8px 10px;
     font-size: 16px;
     border-radius: 5px;
@@ -101,4 +102,58 @@ input[type='number'] {
     margin: 10px 0 30px ;
     display: block;
     width: 100%;
+}
+
+.btn:hover{
+    border-color: #009999;
+    background-color: #017e7e;
+}
+
+.btn:focus, .delete-btn:focus {
+    outline: 0;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.list li {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    columns: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.list li.plus {
+    border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+    border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+    cursor: pointer;
+    background-color: #e74c3c;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 3px 5px; 
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+    opacity: 1;
 }
